@@ -1,0 +1,22 @@
+{
+  "type": "sender",
+  "data":
+  {
+        "description": "",
+        "device_id": "ccc4580f-d5ab-418a-bcaa-96957fe0b126",
+        "flow_id": "ccc42080-d354-47ea-a55d-dc8cc659de06",
+        "id": "cccc4f68-098a-4b65-9a6d-c85150a83677",
+        "interface_bindings": [
+            "ethmux"
+        ],
+        "label": "TEST SENDER v1.2",
+        "manifest_href": "http://10.30.6.199:3000/x-nmos/node/v1.2/senders/2c94249e-6fa6-11e8-990a-00197c0047e5/stream.sdp",
+        "subscription": {
+            "active": false,
+            "receiver_id": null
+        },
+        "tags": {},
+        "transport": "urn:x-nmos:transport:rtp.mcast",
+        "version": "1537266290:636094936"
+    }
+}

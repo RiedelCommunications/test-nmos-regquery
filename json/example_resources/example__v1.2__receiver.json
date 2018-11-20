@@ -1,0 +1,25 @@
+{
+  "type": "receiver",
+  "data": {
+    "caps": {
+      "media_types": [
+        "audio/L24"
+      ]
+    },
+    "description": "",
+    "device_id": "ccc4580f-d5ab-418a-bcaa-96957fe0b126",
+    "format": "urn:x-nmos:format:audio",
+    "id": "ccc6ce7b-7054-47de-87c6-389260478d52",
+    "interface_bindings": [
+      "ethmux"
+    ],
+    "label": "TEST RECEIVER v1.2",
+    "subscription": {
+      "active": true,
+      "sender_id": null
+    },
+    "tags": {},
+    "transport": "urn:x-nmos:transport:rtp",
+    "version": "1509029285:46"
+  }
+}

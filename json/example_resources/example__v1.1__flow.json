@@ -1,0 +1,39 @@
+{
+  "type": "flow",
+  "data": {
+    "description": "Test Card",
+    "tags": {},
+    "format": "urn:x-nmos:format:video",
+    "label": "TEST FLOW v1.1",
+    "version": "1441704616:587121295",
+    "parents": [],
+    "source_id": "aaa9cea2-ab63-4f97-8dd1-bad4669ea5e4",
+    "device_id": "aaa4580f-d5ab-418a-bcaa-96957fe0b126",
+    "id": "aaaec3b1-1b0f-417d-9059-8b94a47197ed",
+    "media_type": "video/raw",
+    "frame_width": 1920,
+    "frame_height": 1080,
+    "interlace_mode": "interlaced_tff",
+    "colorspace": "BT709",
+    "components": [
+        {
+            "name": "Y",
+            "width": 1920,
+            "height": 1080,
+            "bit_depth": 10
+        },
+        {
+            "name": "Cb",
+            "width": 960,
+            "height": 1080,
+            "bit_depth": 10
+        },
+        {
+            "name": "Cr",
+            "width": 960,
+            "height": 1080,
+            "bit_depth": 10
+        }
+    ]
+}
+}

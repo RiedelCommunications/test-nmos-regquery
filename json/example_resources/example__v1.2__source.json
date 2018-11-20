@@ -1,0 +1,25 @@
+{
+  "type": "source",
+  "data": {
+    "caps": {},
+    "channels": [
+      {
+        "label": "channel 1",
+        "symbol": "U01"
+      },
+      {
+        "label": "channel 2",
+        "symbol": "U02"
+      }
+    ],
+    "clock_name": "clk0",
+    "description": "",
+    "device_id": "ccc4580f-d5ab-418a-bcaa-96957fe0b126",
+    "format": "urn:x-nmos:format:audio",
+    "id": "ccc8cc8f-5229-42d3-aca7-4ca77e418f89",
+    "label": "TEST SOURCE v1.2",
+    "parents": [],
+    "tags": {},
+    "version": "1509029285:5"
+  }
+}

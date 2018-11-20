@@ -1,0 +1,5 @@
+requests
+netifaces
+websocket-client
+jsonschema
+zeroconf==0.17.5

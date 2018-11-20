@@ -1,0 +1,44 @@
+{
+  "type": "node",
+  "data": {
+    "api": {
+      "endpoints": [
+        {
+          "host": "192.168.6.41",
+          "port": 4450,
+          "protocol": "http"
+        }
+      ],
+      "versions": [
+        "v1.1",
+        "v1.2"
+      ]
+    },
+    "caps": {},
+    "clocks": [
+      {
+        "gmid": "00-19-7c-ff-fe-40-31-8a",
+        "locked": true,
+        "name": "clk0",
+        "ref_type": "ptp",
+        "traceable": false,
+        "version": "IEEE1588-2008"
+      }
+    ],
+    "description": "",
+    "hostname": "mediornet",
+    "href": "http://192.168.6.41:4450",
+    "id": "ccc2a2a9-efa5-408f-8ccf-8ee53b5bb555",
+    "interfaces": [
+      {
+        "chassis_id": null,
+        "name": "ethmux",
+        "port_id": "00-19-7c-40-3b-4d"
+      }
+    ],
+    "label": "TEST NODE v1.2",
+    "services": [],
+    "tags": {},
+    "version": "1509029301:15"
+  }
+}

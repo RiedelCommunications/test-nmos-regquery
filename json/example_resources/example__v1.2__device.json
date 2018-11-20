@@ -1,0 +1,19 @@
+{
+  "type": "device",
+  "data": {
+    "controls": [],
+    "description": "",
+    "id": "ccc4580f-d5ab-418a-bcaa-96957fe0b126",
+    "label": "TEST DEVICE v1.2",
+    "node_id": "ccc2a2a9-efa5-408f-8ccf-8ee53b5bb555",
+    "receivers": [
+      "ccc6ce7b-7054-47de-87c6-389260478d52"
+    ],
+    "senders": [
+      "cccc4f68-098a-4b65-9a6d-c85150a83677"
+    ],
+    "tags": {},
+    "type": "urn:x-nmos:device:generic",
+    "version": "1509029285:2"
+  }
+}

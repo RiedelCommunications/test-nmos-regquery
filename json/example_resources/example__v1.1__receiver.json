@@ -1,0 +1,22 @@
+{
+  "type": "receiver",
+  "data": {
+    "description": "",
+    "format": "urn:x-nmos:format:video",
+    "tags": {},
+    "caps": {
+        "media_types": [
+            "video/raw"
+        ]
+    },
+    "subscription": {
+        "sender_id": "2683ad14-642f-459d-a169-ef91c76cec6b"
+    },
+    "version": "1441704532:450093308",
+    "label": "TEST RECEIVER v1.1",
+    "id": "bbb53d65-ac83-441c-86f6-9b27df30ef0c",
+    "transport": "urn:x-nmos:transport:rtp",
+    "device_id": "aaa4580f-d5ab-418a-bcaa-96957fe0b126"
+}
+
+}
