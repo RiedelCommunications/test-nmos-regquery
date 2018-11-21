@@ -22,9 +22,7 @@ SERVER_PORT = 8888
 VERSIONS = ["v1.2"]
 
 # Default CORS Headers
-CORS_HEADERS = ["Access-Control-Allow-Headers",
-                "Access-Control-Allow-Methods",
-                "Access-Control-Allow-Origin"]
+CORS_HEADERS = ["Access-Control-Allow-Origin"]
 
 # Wait time (s) between each request
 REQUEST_SLEEP = False
@@ -34,7 +32,7 @@ REQUEST_SLEEP_TIME = 0.005
 MDNS_WAIT_TIME = 2.0
 
 # Wait time (s) for garbage collection // missing heartbeat
-HEARTBEAT_TIMEOUT = 25.0
+HEARTBEAT_TIMEOUT = 15.0
 
 # Wait time (s) before checking WS messages after changes
 WAIT_WS_MSG = 1.0
@@ -51,8 +49,6 @@ CHECK_HEAD_RESPONSE = True
 HEAD_COMPARE_HEADERS = [
     "Content-Type",
     "Content-Length",
-    "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Methods",
     "Access-Control-Allow-Origin",
     "Server",
 ]
@@ -63,7 +59,7 @@ RELAXED_TRAILING_SLASH_POLICY = False
 
 # # The following parameters should not be modified # #
 #  Which resources to test
-_RESOURCES = ["node", "device", "sender", "receiver", "source", "flow"]
+_RESOURCES = ["node", "device", "source", "flow", "sender", "receiver"]
 # Default URL snippets
 _BASE_URL = "{}://{}:{}".format(SERVER_PROTO, SERVER_IP, str(SERVER_PORT))
 _BASE_XNMOS_URL = _BASE_URL + "/x-nmos"

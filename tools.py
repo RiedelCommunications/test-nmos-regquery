@@ -352,6 +352,14 @@ class sample_data:
                                        expected_status_code=201,
                                        expected_json_response=data["data"])
 
+    def bump_resource_version(self, resource):
+        """Bump the version timestamp in the resource"""
+        v = [int(i) for i in resource["data"]["version"].split(':')]
+        v[1] += 1
+        if v[1] == 1e9:
+            v[0] += 1; v[1] = 0
+        resource["data"]["version"] = str(v[0]) + ':' + str(v[1])
+
     def update_sample_data(self, versions, resources):
         """Update sample resources of the given version"""
         for version in versions:
@@ -359,6 +367,7 @@ class sample_data:
                 url = "{}/{}/resource".format(defines._BASE_REGISTRATION_URL, version)
                 data = copy.deepcopy(self.get_sample_data(resource=resource, version=version))
                 data["data"]["label"] = data["data"]["label"] + "_updated"
+                self.bump_resource_version(data)
                 self.util.post_request(url=url,
                                        request_data=data,
                                        expected_status_code=200,

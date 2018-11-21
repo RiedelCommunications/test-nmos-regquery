@@ -558,6 +558,7 @@ class testQueryWebsockets(tools.TestBase):
                                                             version=curr_version)
                 expected_data_updated = copy.deepcopy(expected_data)
                 expected_data_updated["data"]["label"] = expected_data_updated["data"]["label"] + "_updated"
+                self.sample.bump_resource_version(expected_data_updated)
 
                 test_item = {
                     "ws_href": response["ws_href"],

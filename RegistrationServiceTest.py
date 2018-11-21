@@ -174,7 +174,10 @@ class testRegistrationAPIBasicResource(tools.TestBase):
 
             # Options
             with self.subTest(url=url):
-                self.options_request(url=url, expected_methods=["OPTIONS", "HEAD", "GET", "POST"])
+                expected_methods = ["OPTIONS", "GET", "POST"]
+                if defines.CHECK_HEAD_RESPONSE:
+                    expected_methods.append("HEAD")
+                self.options_request(url=url, expected_methods=expected_methods)
 
             # POST heartbeat
             self.post_request(url=url,
