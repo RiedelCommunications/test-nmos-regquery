@@ -83,7 +83,7 @@ class testAnnouncements(tools.TestBase):
                                         expected_port=defines.SERVER_PORT,
                                         expected_proto=defines.SERVER_PROTO,
                                         expected_type="_nmos-registration._tcp.local.",
-                                        expected_versions=",".join(defines.VERSIONS))
+                                        expected_versions=",".join(sorted(defines.VERSIONS)))
 
         # Verify _nmos-query._tcp announcement
         query_service = container.get_query_service(defines.SERVER_IP, defines.SERVER_PORT)
@@ -93,4 +93,4 @@ class testAnnouncements(tools.TestBase):
                                         expected_port=defines.SERVER_PORT,
                                         expected_proto=defines.SERVER_PROTO,
                                         expected_type="_nmos-query._tcp.local.",
-                                        expected_versions=",".join(defines.VERSIONS))
+                                        expected_versions=",".join(sorted(defines.VERSIONS)))
